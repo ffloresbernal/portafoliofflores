@@ -27,13 +27,13 @@ export const Navbar = () => {
                         <NavLink to='/home' className='menuLink' onClick={()=> setShowMenu(false)} >Home</NavLink>
                     </MenuItem>
                     <MenuItem className='menu-item'>
-                        <NavLink to='/about-me' className='menuLink' onClick={()=> setShowMenu(false)} >Sobre mi</NavLink>
+                        <NavLink to='/about-me' className='menuLink' onClick={()=> setShowMenu(false)} >Sobre mi </NavLink>
                     </MenuItem>
                     <MenuItem className='menu-item'>
-                        <NavLink to='/proyects' className='menuLink' onClick={()=> setShowMenu(false)} >Proyectos</NavLink>
+                        <NavLink to='/projects' className='menuLink' onClick={()=> setShowMenu(false)} >Proyectos</NavLink>
                     </MenuItem>
                     <MenuItem className='menu-item'> 
-                        <NavLink to='/cv' className='menuLink' onClick={()=> setShowMenu(false)} >curriculum</NavLink>
+                        <NavLink to='/cv' className='menuLink' onClick={()=> setShowMenu(false)} >Curriculum</NavLink>
                     </MenuItem>
                 </Menu>
 

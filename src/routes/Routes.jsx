@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Aboutme } from '../aboutme/Aboutme';
 import { Home } from '../home/Home';
 import { Navbar } from '../layout/Navbar'
-import { Proyects } from './../proyects/Proyects'
+import { Projects } from '../proyects/Projects'
 import { Resume } from './../resume/Resume'
 
 export const Routess = () => {
@@ -17,7 +17,7 @@ export const Routess = () => {
             <Route path='/' element={<Home />}/>
             <Route path='/home' element={<Home />}/>
             <Route path='/about-me' element={<Aboutme />}/>
-            <Route path='/proyects' element={<Proyects />}/>
+            <Route path='/proyects' element={<Projects />}/>
             <Route path='/cv' element={<Resume />}/>
         </Routes>
 

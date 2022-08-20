@@ -38,7 +38,7 @@ export const Menu = styled.ul`
     justify-content:flex-end;
     list-style:none;
 
-    @media screen and (max-width:960px){
+    @media screen and (max-width:1162px){
         background-color: rgb(18, 100, 102);
         padding: 0%;
         position:absolute;
@@ -58,7 +58,7 @@ export const MenuItem = styled.li`
     margin: 5px;
     padding: 0px 30px  0px 30px;
 
-    @media screen and (max-width:960px){
+    @media screen and (max-width:1162px){
         width:100%;
         height:85px;
         display: flex;
@@ -87,7 +87,7 @@ export const MenuItemLink = styled.a`
         
     }
 
-    @media screen and (max-width:960px){
+    @media screen and (max-width:1162px){
         width: 100%;
     }
 `
@@ -95,7 +95,7 @@ export const MobileIcon = styled.div`
     display:none;
 
 
-    @media screen and (max-width:960px){
+    @media screen and (max-width:1162px){
         display:flex;
         align-items:center;
         cursor:pointer;

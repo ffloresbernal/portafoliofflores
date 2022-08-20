@@ -25,7 +25,7 @@
     padding-left: 20px;
 }
 
-@media screen and (max-width:960px){
+@media screen and (max-width:1162px){
     .menuLink{
         width: 60%;
     }

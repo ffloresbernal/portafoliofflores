@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     width:100%;
     height:70px;
-    background-color:rgb(18, 100, 102);
+    background-color:rgb(95, 28, 134);
 `
 export const Wrapper = styled.div`
     width:100%;
@@ -39,7 +39,7 @@ export const Menu = styled.ul`
     list-style:none;
 
     @media screen and (max-width:1162px){
-        background-color: rgb(18, 100, 102);
+        background-color: rgb(71, 18, 102);
         padding: 0%;
         position:absolute;
         width:100%;
@@ -49,6 +49,7 @@ export const Menu = styled.ul`
         justtify-content:center;
         flex-direction:column;
         align-items:center;
+        z-index: 1;
         transition:0.4s all ease;
     }
 `
@@ -83,7 +84,7 @@ export const MenuItemLink = styled.a`
     &:hover{
         color:#fff;
         width: 100%;
-        background-color:rgb(8, 71, 72);
+        background-color:rgb(71, 18, 102);
         
     }
 

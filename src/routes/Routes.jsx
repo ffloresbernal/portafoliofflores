@@ -12,7 +12,6 @@ export const Routess = () => {
     <BrowserRouter>
     {/* HEADER */}
         <Navbar/>
-        <JueguitoDados />
 
     {/* BODY */}
         <Routes>

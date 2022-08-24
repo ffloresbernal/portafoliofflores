@@ -10,22 +10,11 @@ export const Dicegame = () => {
   const [popup, setpopup] = useState(false);
   const [dadoCPU, setDadoCPU] = useState(1);
 
-  const [juegoCPU,setJuegoCPU] = useState([[],[],[]]);
-  const [juegoPlayer,setJuegoPlayer] = useState([[],[],[]]);
 
   function randomNumero(min, max) {
     return (Math.floor(Math.random() * (max - min + 1)) + min)
   }
-  
-  function endGame(PlayerEnd,CpuEnd) {
-    if (PlayerEnd === true){
-      setDadoCPU(2);
-    }
-    if (CpuEnd === true){
-      setDadoCPU(2);
-    }
 
-  }
 
   return (
     <div>      

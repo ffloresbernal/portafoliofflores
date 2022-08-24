@@ -18,9 +18,13 @@ export const Dicegame = () => {
   }
   
   function endGame(PlayerEnd,CpuEnd) {
-    if (PlayerEnd === true) or (CpuEnd === true){
-      /*se terminó el juego*/
+    if (PlayerEnd === true){
+      setDadoCPU(true);
     }
+    if (CpuEnd === true){
+      setDadoCPU(true);
+    }
+
   }
 
   return (

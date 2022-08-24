@@ -4,15 +4,15 @@
  import { Jueguito, MobileIcon,
          Divcpu,Avatar,TableCPU,TablePlayer,
          Tablecell,EspacioDado, DivPlayer } from './Home.component';
- import { GiRollingDices } from "react-icons/gi";
+ //import { GiRollingDices } from "react-icons/gi";
 
  export const Dicegame = () => {
    const [popup, setpopup] = useState(false);
    //const [dadoCPU, setDadoCPU] = useState(1);
-   
-   function randomNumero(min, max) {
-     return (Math.floor(Math.random() * (max - min + 1)) + min)
-   }
+
+  //  function randomNumero(min, max) {
+  //    return (Math.floor(Math.random() * (max - min + 1)) + min)
+  //  }
 
 
    return ( 
@@ -22,6 +22,18 @@
         {popup ? <FaTimes /> : <FaDice />  }
       </MobileIcon>
       <br></br>
+      <Jueguito open={popup}>
+        <MobileIcon onClick={()=> setpopup(!popup)}>
+          {popup ? <FaTimes /> : <FaDice />  }
+        </MobileIcon>
+        <Divcpu>
+
+        </Divcpu>
+        <DivPlayer>
+          
+        </DivPlayer>
+      </Jueguito>
+
     </IconContext.Provider>
    </div>)
 

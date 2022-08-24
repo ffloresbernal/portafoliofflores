@@ -8,7 +8,7 @@ import { Jueguito, MobileIcon,
         Tablecell,EspacioDado, DivPlayer } from './Home.component';
 import { GiRollingDices } from "react-icons/gi";
 
-export const JueguitoDados = () => {
+export const Dicegame = () => {
   const [popup, setpopup] = useState(false);
   const [dadoCPU, setDadoCPU] = useState(1);
 
@@ -16,6 +16,9 @@ export const JueguitoDados = () => {
     return (Math.floor(Math.random() * (max - min + 1)) + min)
   }
   
+  function turnoCpu(booleano){
+    
+  }
 
   return (
     <div>      

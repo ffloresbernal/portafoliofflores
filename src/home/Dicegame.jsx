@@ -17,8 +17,10 @@ export const Dicegame = () => {
     return (Math.floor(Math.random() * (max - min + 1)) + min)
   }
   
-  function turnoCpu(booleano){
-    
+  function endGame(PlayerEnd,CpuEnd) {
+    if (PlayerEnd === true) or (CpuEnd === true){
+      /*se terminó el juego*/
+    }
   }
 
   return (
@@ -29,7 +31,7 @@ export const Dicegame = () => {
           {popup ? <FaTimes /> : <FaDice />  }
         </MobileIcon>
         <br></br>
-        
+
         {/* DADOS >>> ,FaCookieBite,FaDiceFive,
         FaDiceFour,FaDiceOne,FaDiceSix,
         FaDiceThree,FaDiceTwo */}

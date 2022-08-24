@@ -28,9 +28,9 @@ export const JueguitoDados = () => {
 
         <Jueguito open={popup}>
         <MobileIcon onClick={()=> setpopup(!popup)}>
-            {popup ? <FaTimes /> : <FaDice />  }
-          </MobileIcon>
-          <h1> Jueguito de los dados {popup.toString()}</h1>
+          {popup ? <FaTimes /> : <FaDice />  }
+        </MobileIcon>
+          <h1> Dice Game </h1>
           
           <Divcpu>
             <Avatar>

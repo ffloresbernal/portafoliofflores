@@ -88,13 +88,15 @@ export const Avatar = styled.div`
 export const HomeHeader = styled.div`
     align-items: center;
     text-align: center;
-    background: url(${background1});
+    background: url(${background1});    
     font-size: 25px;
     color:white;
     
 `
 
 export const CapsulaBlur = styled.div`
+    width: 100%;
+    height: 100%;
     backdrop-filter: blur(6px);
 `
 export const HomeBody = styled.div`

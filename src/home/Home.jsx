@@ -1,5 +1,6 @@
 import React from 'react'
 import perfil1 from '../assets/img/Perfil1.jpg';
+import {AiOutlineDoubleLeft,AiOutlineDoubleRight} from 'react-icons/ai';
 import background1 from '../assets/img/background1.png';
 import { CapsulaBlur,Card2,Card1, HomeBody, HomeHeader, ImgHome } from './Home.component'
 
@@ -9,7 +10,7 @@ export const Home = () => {
         <HomeHeader > 
           <CapsulaBlur>
             <h2>Fernando Flores Bernal</h2>
-            <h3>Developer</h3>
+            <h3><AiOutlineDoubleLeft/> Developer <AiOutlineDoubleRight /></h3>
             <ImgHome src={perfil1}  />
           </CapsulaBlur>
         </HomeHeader>

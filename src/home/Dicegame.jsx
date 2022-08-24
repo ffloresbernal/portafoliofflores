@@ -19,10 +19,10 @@ export const Dicegame = () => {
   
   function endGame(PlayerEnd,CpuEnd) {
     if (PlayerEnd === true){
-      setDadoCPU(true);
+      setDadoCPU(2);
     }
     if (CpuEnd === true){
-      setDadoCPU(true);
+      setDadoCPU(2);
     }
 
   }
@@ -35,10 +35,6 @@ export const Dicegame = () => {
           {popup ? <FaTimes /> : <FaDice />  }
         </MobileIcon>
         <br></br>
-
-        {/* DADOS >>> ,FaCookieBite,FaDiceFive,
-        FaDiceFour,FaDiceOne,FaDiceSix,
-        FaDiceThree,FaDiceTwo */}
 
         <Jueguito open={popup}>
         <MobileIcon onClick={()=> setpopup(!popup)}>

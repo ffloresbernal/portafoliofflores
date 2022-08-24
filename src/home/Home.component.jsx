@@ -84,3 +84,7 @@ export const Avatar = styled.div`
     flex:1;
 
 `
+export const HomeHeader = styled.div`
+    align-items: center;
+    text-align: center;
+`

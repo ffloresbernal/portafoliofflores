@@ -1,10 +1,12 @@
 import React from 'react'
+import { HomeHeader } from './Home.component'
 
 export const Home = () => {
   return (
     <div>
-        <h1> Home </h1>
-
+        <HomeHeader> 
+          <h1>Home</h1>
+        </HomeHeader>
     </div>
   )
 }

@@ -1,22 +1,32 @@
-// import React,{useState} from 'react';
-// import {FaDice, FaTimes} from 'react-icons/fa';
-// import { IconContext } from 'react-icons'
-// import { Jueguito, MobileIcon,
-//         Divcpu,Avatar,TableCPU,TablePlayer,
-//         Tablecell,EspacioDado, DivPlayer } from './Home.component';
-// import { GiRollingDices } from "react-icons/gi";
+ import React,{useState} from 'react';
+ import {FaDice, FaTimes} from 'react-icons/fa';
+ import { IconContext } from 'react-icons'
+ import { Jueguito, MobileIcon,
+         Divcpu,Avatar,TableCPU,TablePlayer,
+         Tablecell,EspacioDado, DivPlayer } from './Home.component';
+ import { GiRollingDices } from "react-icons/gi";
 
-// export const Dicegame = () => {
-//   const [popup, setpopup] = useState(false);
-//   const [dadoCPU, setDadoCPU] = useState(1);
-
-
-//   function randomNumero(min, max) {
-//     return (Math.floor(Math.random() * (max - min + 1)) + min)
-//   }
+ export const Dicegame = () => {
+   const [popup, setpopup] = useState(false);
+   const [dadoCPU, setDadoCPU] = useState(1);
 
 
-//   return (
+   function randomNumero(min, max) {
+     return (Math.floor(Math.random() * (max - min + 1)) + min)
+   }
+
+
+   return ( 
+   <>
+    <IconContext.Provider value={{style:{ fontSize:"2rem"} }} >
+      <MobileIcon onClick={()=> setpopup(!popup)}>
+        {popup ? <FaTimes /> : <FaDice />  }
+      </MobileIcon>
+      <br></br>
+    </IconContext.Provider>
+   </>)
+   
+
 //     <div>      
 //       {/* juego de los daditos */}
 //       <IconContext.Provider value={{style:{ fontSize:"2rem"} }} >

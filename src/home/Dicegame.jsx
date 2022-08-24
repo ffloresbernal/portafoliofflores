@@ -1,7 +1,5 @@
 import React,{useState} from 'react';
-import {FaDice, FaTimes,FaCookieBite,FaDiceFive,
-        FaDiceFour,FaDiceOne,FaDiceSix,
-        FaDiceThree,FaDiceTwo} from 'react-icons/fa';
+import {FaDice, FaTimes} from 'react-icons/fa';
 import { IconContext } from 'react-icons'
 import { Jueguito, MobileIcon,
         Divcpu,Avatar,TableCPU,TablePlayer,
@@ -11,6 +9,9 @@ import { GiRollingDices } from "react-icons/gi";
 export const Dicegame = () => {
   const [popup, setpopup] = useState(false);
   const [dadoCPU, setDadoCPU] = useState(1);
+
+  const [juegoCPU,setJuegoCPU] = useState([[],[],[]]);
+  const [juegoPlayer,setJuegoPlayer] = useState([[],[],[]]);
 
   function randomNumero(min, max) {
     return (Math.floor(Math.random() * (max - min + 1)) + min)
@@ -28,6 +29,10 @@ export const Dicegame = () => {
           {popup ? <FaTimes /> : <FaDice />  }
         </MobileIcon>
         <br></br>
+        
+        {/* DADOS >>> ,FaCookieBite,FaDiceFive,
+        FaDiceFour,FaDiceOne,FaDiceSix,
+        FaDiceThree,FaDiceTwo */}
 
         <Jueguito open={popup}>
         <MobileIcon onClick={()=> setpopup(!popup)}>

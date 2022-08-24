@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Aboutme } from '../aboutme/Aboutme';
 import { Home } from '../home/Home';
-import { Dicegame } from '../home/Dicegame';
+//import { Dicegame } from '../home/Dicegame';
 import { Navbar } from '../layout/Navbar'
 import { Projects } from '../proyects/Projects'
 import { Resume } from './../resume/Resume'
@@ -12,7 +12,7 @@ export const Routess = () => {
     <BrowserRouter>
     {/* HEADER */}
         <Navbar/>
-        <Dicegame />
+       
 
     {/* BODY */}
         <Routes>

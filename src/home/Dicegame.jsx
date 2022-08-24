@@ -8,24 +8,23 @@
 
  export const Dicegame = () => {
    const [popup, setpopup] = useState(false);
-   const [dadoCPU, setDadoCPU] = useState(1);
-
-
+   //const [dadoCPU, setDadoCPU] = useState(1);
+   
    function randomNumero(min, max) {
      return (Math.floor(Math.random() * (max - min + 1)) + min)
    }
 
 
    return ( 
-   <>
+   <div>
     <IconContext.Provider value={{style:{ fontSize:"2rem"} }} >
       <MobileIcon onClick={()=> setpopup(!popup)}>
         {popup ? <FaTimes /> : <FaDice />  }
       </MobileIcon>
       <br></br>
     </IconContext.Provider>
-   </>)
-   
+   </div>)
+
 
 //     <div>      
 //       {/* juego de los daditos */}

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Aboutme } from '../aboutme/Aboutme';
 import { Home } from '../home/Home';
+import { JueguitoDados } from '../home/Jueguito';
 import { Navbar } from '../layout/Navbar'
 import { Projects } from '../proyects/Projects'
 import { Resume } from './../resume/Resume'
@@ -11,6 +12,7 @@ export const Routess = () => {
     <BrowserRouter>
     {/* HEADER */}
         <Navbar/>
+        <JueguitoDados />
 
     {/* BODY */}
         <Routes>

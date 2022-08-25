@@ -40,16 +40,17 @@ export const Menu = styled.ul`
 
     @media screen and (max-width:1162px){
         background-color: rgb(71, 18, 102);
-        padding: 0%;
+        padding: 0;
+        margin: 0;
         position:absolute;
         width:100%;
-        top:50px;
+        top:65px;
         left:${({open})=> open ? "0" : "-110%" };
         height:55vh;
-        justtify-content:center;
         flex-direction:column;
         align-items:center;
         z-index: 1;
+        justtify-content:center;
         transition:0.4s all ease;
     }
 `
@@ -61,8 +62,10 @@ export const MenuItem = styled.li`
 
     @media screen and (max-width:1162px){
         width:100%;
-        height:85px;
+        height:45vh;
         display: flex;
+        margin: 0;
+        padding: 0;
         justify-content:center;
         align-items:center;
     }
@@ -90,6 +93,8 @@ export const MenuItemLink = styled.a`
 
     @media screen and (max-width:1162px){
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 `
 export const MobileIcon = styled.div`

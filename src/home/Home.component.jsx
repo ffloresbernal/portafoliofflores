@@ -100,7 +100,7 @@ export const CapsulaBlur = styled.div`
     backdrop-filter: blur(6px);
     h2{
         margin-top: 0px;
-       font-family:Space Grotesk;
+        font-family:Space Grotesk;
     }
 `
 export const HomeBody = styled.div`

@@ -98,6 +98,10 @@ export const CapsulaBlur = styled.div`
     width: 100%;
     height: 100%;
     backdrop-filter: blur(6px);
+    h2{
+        margin-top: 0px;
+       font-family:Space Grotesk;
+    }
 `
 export const HomeBody = styled.div`
     margin: 0;

@@ -93,21 +93,10 @@ export const HomeHeader = styled.div`
     color:white;
     
 `
-
-export const CapsulaBlur = styled.div`
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(6px);
-    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-    h2{
-        margin-top: 0px;
-        font-family:'Barlow', sans-serif;
-    }
-`
 export const HomeBody = styled.div`
-    margin: 0;
     padding: 3%;
     display: flex;
+    justify-content: center;
     @media screen and (max-width:1162px) {
         flex-flow: column;
     }
@@ -116,6 +105,22 @@ export const HomeBody = styled.div`
         flex-flow: column;
     }
 `
+
+export const CapsulaBlur = styled.div`
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    padding-bottom: 5px;
+    h2{
+        margin-top: 0px;
+        padding-top: 15px;
+        font-family:'Barlow', sans-serif;
+    }
+    svg{
+        margin: 0px 0px -8px;
+    }
+`
+
 export const Card1 = styled.div`
     align-items: center;
     text-align: center;
@@ -142,27 +147,36 @@ export const Card1 = styled.div`
     }
 `
 export const Card2 = styled.div`
-    margin: 0;
+    background: #f5f5f5;
+    margin:auto;
     color: white;
-    padding: 0px 200px 0px 100px ; 
+    padding: 0px 200px 0px 100px ;
     font-size: 17px;
     font-weight: 700;
-    flex:3;
+    box-shadow: 4px 3px 2px 1px rgb(192 98 255);
+    margin :30 px;
+    
+
     @media screen and (max-width:1162px) {
-        margin: 0;
-        padding: 0; 
-        flex-flow: column;
+        padding: 15px; 
+        margin : 30px;
+        box-shadow: 4px 3px 2px 1px rgb(192 98 255);
+
     }
 
     @media screen and (max-width:722px) {
-        margin: 0;
-        padding: 0; 
-        flex-flow: column;
+        padding: 15px; 
+        margin : 30px;
+        box-shadow: 4px 3px 2px 1px rgb(192 98 255);
     }
 `
 export const ImgHome = styled.img`
     padding: 0;
     height:200px;
-    margin-bottom: 2%;
+    margin-bottom: 0;
     border-radius: 36%;
+`
+export const Header1 = styled.h1`
+    padding:4px;
+    margin-left:20px;
 `

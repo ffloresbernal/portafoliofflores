@@ -101,7 +101,7 @@ export const CapsulaBlur = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
     h2{
         margin-top: 0px;
-        font-family:'Silkscreen', cursive;
+        font-family:'Barlow', sans-serif;
     }
 `
 export const HomeBody = styled.div`

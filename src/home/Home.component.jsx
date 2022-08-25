@@ -98,9 +98,10 @@ export const CapsulaBlur = styled.div`
     width: 100%;
     height: 100%;
     backdrop-filter: blur(6px);
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
     h2{
         margin-top: 0px;
-        font-family:Space Grotesk;
+        font-family:'Silkscreen', cursive;
     }
 `
 export const HomeBody = styled.div`

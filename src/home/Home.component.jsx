@@ -81,7 +81,7 @@ export const TablePlayer = styled.table`
 `
 export const Avatar = styled.div`
     margin :10px;
-    background-color: blueviolet;
+    background-color: #8a2be2;
     flex:1;
 
 `
@@ -150,24 +150,29 @@ export const Card2 = styled.div`
     background: #f5f5f5;
     margin:auto;
     color: white;
-    padding: 0px 200px 0px 100px ;
+    padding: 0px 10px 0px 10px ;
     font-size: 17px;
     font-weight: 700;
-    box-shadow: 4px 3px 2px 1px rgb(192 98 255);
+    box-shadow: 1px 2px 20px 1px rgb(192 98 255);
     margin :30 px;
-    
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 200ms all;
+    &:hover{
+        transform: scale(1.1,1.1);
+    }
 
     @media screen and (max-width:1162px) {
-        padding: 15px; 
-        margin : 30px;
-        box-shadow: 4px 3px 2px 1px rgb(192 98 255);
-
+        box-shadow: 1px 2px 20px 1px rgb(192 98 255);
+        margin: 30px;
+        border-radius: 15px;
     }
 
     @media screen and (max-width:722px) {
         padding: 15px; 
         margin : 30px;
-        box-shadow: 4px 3px 2px 1px rgb(192 98 255);
+        box-shadow: 1px 2px 20px 1px rgb(192 98 255);
+        border-radius: 15px;
     }
 `
 export const ImgHome = styled.img`
@@ -179,4 +184,13 @@ export const ImgHome = styled.img`
 export const Header1 = styled.h1`
     padding:4px;
     margin-left:20px;
+`
+export const ImgCards = styled.img`
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height:250px;
+    margin-bottom: 0;
+`
+export const TextCard = styled.h5`
+    color: #8a2be2;
 `

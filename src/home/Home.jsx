@@ -17,10 +17,6 @@ import {
   TextCard
 } from "./Home.component";
 
-
-
-
-
 export const Home = () => {
   return (
     <div>

@@ -190,6 +190,13 @@ export const ImgCards = styled.img`
     padding-bottom: 7px;
     height:250px;
     margin-bottom: 0;
+
+    @media screen and (max-width:450px){
+        height:214px;
+    }
+    @media screen and (max-width:392px){
+        height:200px;
+    }
 `
 export const TextCard = styled.h5`
     color: #8a2be2;
